@@ -13,4 +13,4 @@ function carroussel(){
     imgs.style.transform = `translateX(${ -idx * 500}px)`;
 }
 
-setInterval(carroussel, 1800);
+setInterval(carroussel, 3600);

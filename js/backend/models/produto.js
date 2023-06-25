@@ -42,5 +42,5 @@ const produto = db.sequelize.define('produto',{
 
 
 
-//produto.sync({force:true})
+produto.sync({force:true})
 module.exports = produto;

@@ -7,5 +7,5 @@ const fornecedor = db.sequelize.define('fornecedore',{
         type: db.Sequelize.STRING
     }
 });
-//fornecedor.sync({force:true})
+fornecedor.sync({force:true})
 module.exports = fornecedor;

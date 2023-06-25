@@ -22,5 +22,5 @@ const loja = db.sequelize.define('loja',{
 
 
 
-//loja.sync({force:true})
+loja.sync({force:true})
 module.exports = loja;

@@ -28,5 +28,5 @@ const vendedor = db.sequelize.define('Vendedor',{
 
 
 
-//vendedor.sync({force:true})
+vendedor.sync({force:true})
 module.exports = vendedor;
