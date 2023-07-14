@@ -15,8 +15,8 @@ body {
     flex: 0 0 40%;
     max-width: 450px;
     position: absolute;
-    left: 30%;
-    top: -30%;
+    left: 40%;
+
     justify-content: center;
     text-align: center;
     margin: 12rem auto;

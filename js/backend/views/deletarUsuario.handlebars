@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #271b31;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
 }
-#conteudo {
+#container {
     max-width: 450px;
     justify-content: center;
     text-align: center;
@@ -17,7 +17,6 @@ body {
     background-color: #fdfdfd;
     padding: 1.5rem;
     color: black;
-    border: 2px solid black;
     border-radius: 15px;
     box-shadow: 3px 3px 1px 0px #00000060;
 }
@@ -46,26 +45,25 @@ input {
   transition: all .3s ease-out;
   border-radius: 0;
 }
-button {
-  background-color: transparent;
-  border-color: black;
-  color: black;
-  padding: 7px;
-  font-weight: bold;
-  font-size: 12pt;
-  margin-top: 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
+button{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 100px;
+    color: #ffffff;
+    font-weight: 700;
 }
-button:hover {
-    background-color: black;
+
+button:hover{
+    
+    background-color: rgb(0, 255, 85);
     color: white;
     transition: all .4s ease-out;
 }
 </style>
 
-<div id="conteudo">
+<div id="container">
         <header>
             <h1>Deletar Conta</h1>
         </header>
@@ -74,7 +72,8 @@ button:hover {
                 <div class="inputNome">
                     <input type="text" name="cpf" placeholder="informe o Cpf Para deletar a conta" required>
                 </div>
-                <button type="submit" id="button">deletar</button>
+                <button type="submit" id="button">deletar</button></a><br><br>
+            <a href="/">VOLTAR</a>
             </form>
         </div>
     </div>
