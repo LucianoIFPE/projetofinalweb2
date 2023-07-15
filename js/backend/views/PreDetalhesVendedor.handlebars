@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
-    color: #1c1e21;
+    background-color: #271b31;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#container {
+#conteudo {
     max-width: 450px;
     justify-content: center;
     text-align: center;
@@ -17,6 +17,7 @@ body {
     background-color: #fdfdfd;
     padding: 1.5rem;
     color: black;
+    border: 2px solid black;
     border-radius: 15px;
     box-shadow: 3px 3px 1px 0px #00000060;
 }
@@ -45,35 +46,38 @@ input {
   transition: all .3s ease-out;
   border-radius: 0;
 }
-button{
-    background-color: #1877f2;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    padding: 10px 100px;
-    color: #ffffff;
-    font-weight: 700;
+button {
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
 }
-
-button:hover{
-    
-    background-color: rgb(0, 255, 85);
+button:hover {
+    background-color: black;
     color: white;
     transition: all .4s ease-out;
 }
 </style>
 
-<div id="container">
+<div id="conteudo">
         <header>
-            <h1>Atualizar Conta</h1>
+            <h1>Detalhes da Conta</h1>
         </header>
         <div id="forms">
-            <form action="/cliente/atualizarcadastro" method="post" id="form">
+            <form action="/vendedor/detalhesvendedor" method="post" id="form">
                 <div class="inputNome">
-                    <input type="text" name="cpf" placeholder="informe o Cpf Para editar a conta" required>
+                    <input type="text" name="cpf" placeholder="Digite o Cpf " required>
                 </div>
-               <a href="/cliente/atualizarcadastro"><button type="submit" id="button">Atualização</button></a><br><br>
-            <a href="/cliente/minhaconta">VOLTAR</a> 
+               <a href="/vendedor/detalhesvendedor"><button type="submit" id="button">ir para detalhes</button></a>
+               <a href="/vendedor/deletarvendedor"><button type="submit" id="button">Excluir Conta</button></a>  
+              
             </form>
         </div>
+        
     </div>
