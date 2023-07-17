@@ -7,14 +7,6 @@ const produto = db.sequelize.define('produto',{
         type: db.Sequelize.STRING
     },
 
-    marca:{
-        type: db.Sequelize.STRING
-    },
-
-    cor:{
-        type: db.Sequelize.STRING
-    },
-
     Preco:{
         type: db.Sequelize.DOUBLE(6,2)
     },
@@ -29,11 +21,7 @@ const produto = db.sequelize.define('produto',{
         
     },
     
-    tamanho:{
-        type: db.Sequelize.INTEGER
-    },
-
-    
+   
 });
 
 
